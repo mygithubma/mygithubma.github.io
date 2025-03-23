@@ -1,0 +1,2 @@
+# mygithubma.github.io
+myblog
