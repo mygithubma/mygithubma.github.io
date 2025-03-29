@@ -1,0 +1,1670 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="Gridea静态个人博客">
+<meta name="description" content="路漫漫其修远兮，吾将上下而求索。">
+<meta name="theme-color" content="#495057">
+<title>Xteminal命令行 | Gridea</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1743252805230">
+<link rel="stylesheet" href="/media/css/gemini.css">
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.loli.net/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/default.css"
+  rel="stylesheet">
+
+<link rel="stylesheet" href="/styles/main.css">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/media/js/jquery.js"></script>
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+  integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
+  integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
+  integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+
+
+
+
+
+  <meta name="description" content="Xteminal命令行" />
+  <meta name="keywords" content="" />
+</head>
+
+<body>
+  <div class="head-top-line"></div>
+  <div class="header-box">
+    
+<div class="gemini">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>Gridea</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">寄蜉蝣于天地 渺沧海之一粟。</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/" target="_self">
+                  <i class="fa fa-globe"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/archives" target="_self">
+                  <i class="fa fa-globe"></i> 归档
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/tags" target="_self">
+                  <i class="fa fa-globe"></i> 标签
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/post/about" target="_self">
+                  <i class="fa fa-globe"></i> 关于
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="https://lzmhc.top:8081/" target="_blank">
+                  <i class="fa fa-globe"></i> 天空之城
+                </a>
+              
+            </li>
+          
+          
+            
+              <li class="nav-item ">
+                <a href="/friends/" target="_self">
+                  
+                    <i class="fa fa-address-book"></i> 友链
+                  
+                </a>
+              </li>
+            
+          
+          
+            <li id="fa_search" class="nav-item">
+              <a href="javascript:void(0);">
+                <i class="fa fa-search"></i> <span class="language" data-lan="search">搜索</span>
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
+    
+    <div
+      class="section-layout gemini ">
+      <div class="section-layout-wrapper">
+        
+
+<div class="sidebar">
+  
+    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active language" data-lan="index">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item language" data-lan="preview">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body gemini" id="sidebar_body">
+        
+          
+            
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">枫</p>
+    
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">11</span>
+        <span class="site-item-stat-name language" data-lan="article">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">0</span>
+        <span class="site-item-stat-name language" data-lan="tag">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+  
+  
+
+
+
+</div>
+          
+        
+      </div>
+    </div>
+  
+</div>
+<script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    jQuery.Velocity(hideElement, 'stop');
+    jQuery.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        jQuery.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+  }
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+        <div class="section-box box-shadow-wrapper">
+          <div class="section bg-color post post-page">
+            <section class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://mygithubma.github.io/xteminal-ming-ling-xing/"> Xteminal命令行 </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span class="language" data-lan="publish">发布于</span>
+      <span class="publish-time" data-t="2025-03-23 20:27:38">2025-03-23</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span
+        >1<span class="language" data-lan="minute"
+          >分钟</span
+        ></span
+      >
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span
+        >54<span class="pc-show language" data-lan="words"
+          >字数</span
+        ></span
+      >
+    </span>
+    
+  </div>
+</section>
+
+            <div class="post-body next-md-body" id="post_body">
+              <p>ssh 192.168.31.143 连接树莓派<br>
+su - root 进入root<br>
+vncserver-virtual 启动vncserver<br>
+改变虚拟界面分辨率<br>
+sudo raspi-config<br>
+vncserver-virtual -geometry 1920x1080<br>
+vncserver-virtual -kill :1结束虚拟界面<br>
+scp mzc@192.168.31.143:/E:... /home/</p>
+
+            </div>
+            
+              <div class="reward-btn">
+                <div class="reward-btn-text">赞赏</div>
+              </div>
+            
+            
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong class="language" data-lan="author">本文作者：</strong>
+      枫
+    </li>
+    <li class="post-copyright-link">
+      <strong class="language" data-lan="link">本文链接：</strong>
+      <a href="https://mygithubma.github.io/xteminal-ming-ling-xing/" title="Xteminal命令行">https://mygithubma.github.io/xteminal-ming-ling-xing/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong class="language" data-lan="copyright">版权声明： </strong>
+      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="fa fa-chevron-left"></i>
+        <a class="nav-pc-next" title="conda命令行" href="https://mygithubma.github.io/conda-ming-ling-xing/">conda命令行</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="conda命令行" href="https://mygithubma.github.io/conda-ming-ling-xing/">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" title="Yolo创建环境命令行：" href="https://mygithubma.github.io/yolo-chuang-jian-huan-jing-ming-ling-xing/">Yolo创建环境命令行：</a>
+        <a class="nav-mobile-next" title="Yolo创建环境命令行：" href="https://mygithubma.github.io/yolo-chuang-jian-huan-jing-ming-ling-xing/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
+      
+    </div>
+  </div>
+</div>
+            
+            
+  
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <center id="runTimeBox">
+      已运行:<span id="run_time"></span>
+    </center>
+    <span id="busuanzi_container_site_pv">浏览数:<span id="busuanzi_value_site_pv"></span> 次</span>
+    <span class="post-meta-divider">|</span>
+    <span id="busuanzi_container_site_uv">访客数:<span id="busuanzi_value_site_uv"></span> 人</span>
+
+    <script>
+      BirthDay = new Date('');
+      if (BirthDay.getTime()) {
+        function runTime() {
+          str = "";
+          today = new Date();
+          timeold = today.getTime() - BirthDay.getTime();
+          msPerDay = 24 * 60 * 60 * 1000;
+          e_daysold = timeold / msPerDay;
+          daysold = Math.floor(e_daysold);
+          str += daysold + "天";
+          return str;
+        }
+        setInterval(function () {
+          $("#run_time").html(runTime());
+        }, 1000);
+      } else {
+        document.querySelector('.footer').removeChild(document.querySelector('#runTimeBox'));
+      }
+    </script>
+    <div class="poweredby">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+  </footer>
+  
+    
+        <div class="gemini back-to-top" id="back_to_top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span class="scrollpercent"> <span id="back_to_top_text">0</span>% </span>
+            
+        </div>
+        
+          
+            
+              <div class="bg-img">
+                <img src="\media\images\custom-bgImg.jpg" />
+              </div>
+              
+                
+                  
+                        
+</div>
+<script>
+  let sideBarOpen = "sidebar-open";
+  let body = document.body;
+  let back2Top = document.querySelector("#back_to_top"),
+    back2TopText = document.querySelector("#back_to_top_text"),
+    drawerBox = document.querySelector("#drawer_box"),
+    rightSideBar = document.querySelector(".sidebar"),
+    viewport = document.querySelector("body");
+
+  function scrollAnimation(currentY, targetY) {
+    let needScrollTop = targetY - currentY;
+    let _currentY = currentY;
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10);
+      _currentY += dist;
+      window.scrollTo(_currentY, currentY);
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY);
+      } else {
+        window.scrollTo(_currentY, targetY);
+      }
+    }, 1);
+  }
+
+  back2Top.addEventListener("click", function (e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+
+  window.addEventListener("scroll", function (e) {
+    let percent =
+      (document.scrollingElement.scrollTop /
+        (document.scrollingElement.scrollHeight -
+          document.scrollingElement.clientHeight)) *
+      100;
+    if (percent > 1 && !back2Top.classList.contains("back-top-active")) {
+      back2Top.classList.add("back-top-active");
+    }
+    if (percent == 0) {
+      back2Top.classList.remove("back-top-active");
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+  let hasCacu = false;
+  window.addEventListener("resize", function (e) {
+    calcuHeight();
+  });
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (
+      (!hasCacu && back2Top.classList.contains("pisces")) ||
+      back2Top.classList.contains("gemini")
+    ) {
+      let sideBar = document.querySelector(".sidebar");
+      let navUl = document.querySelector("#site_nav");
+      sideBar.style =
+        "margin-top:" + (navUl.offsetHeight + navUl.offsetTop + 15) + "px;";
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+
+  let open = false,
+    MOTION_TIME = 300,
+    RIGHT_MOVE_DIS = "320px";
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll(".right-motion");
+    let right = drawerBox.classList.contains("right");
+
+    let transitionDir = right
+      ? "transition.slideRightIn"
+      : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS,
+      };
+      closeProp = {
+        paddingRight: "0px",
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS,
+      };
+      closeProp = {
+        paddingLeft: "0px",
+      };
+    }
+
+    drawerBox.onclick = function () {
+      open = !open;
+      jQuery.Velocity(rightSideBar, "stop");
+      jQuery.Velocity(viewport, "stop");
+      jQuery.Velocity(rightMotions, "stop");
+      if (open) {
+        jQuery.Velocity(
+          rightSideBar,
+          {
+            width: RIGHT_MOVE_DIS,
+          },
+          {
+            duration: MOTION_TIME,
+            begin: function () {
+              jQuery.Velocity(rightMotions, transitionDir, {});
+            },
+          }
+        );
+        jQuery.Velocity(viewport, openProp, {
+          duration: MOTION_TIME,
+        });
+      } else {
+        jQuery.Velocity(
+          rightSideBar,
+          {
+            width: "0px",
+          },
+          {
+            duration: MOTION_TIME,
+            begin: function () {
+              jQuery.Velocity(rightMotions, {
+                opacity: 0,
+              });
+            },
+          }
+        );
+        jQuery.Velocity(viewport, closeProp, {
+          duration: MOTION_TIME,
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle("muse-line");
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    };
+  }
+
+  // 链接跳转
+  let newWindow = "false";
+  if (newWindow === "true") {
+    let links = document.querySelectorAll(".post-body a");
+    links.forEach((item) => {
+      if (!item.classList.contains("btn")) {
+        item.setAttribute("target", "_blank");
+      }
+    });
+  }
+
+  let faSearch = document.querySelector("#fa_search");
+  faSearch &&
+    faSearch.addEventListener("click", function () {
+      document.querySelector("#search_mask").style = "";
+    });
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+
+  // 离开当前页title变化
+  var leaveTitle = "";
+  var normal_title = document.title;
+  if (leaveTitle) {
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState == "hidden") {
+        normal_title = document.title;
+        document.title = leaveTitle;
+      } else {
+        document.title = normal_title;
+      }
+    });
+  }
+</script>
+
+<link rel="stylesheet" href="/media/css/jquery.fancybox.css" />
+<script src="/media/js/jquery.fancybox.js"></script>
+
+<script>
+  let images = document.querySelectorAll(".section img");
+  images.forEach((image) => {
+    var parent = image.parentElement;
+    var next = image.nextElementSibling;
+    parent.removeChild(image);
+    var aelem = document.createElement("a");
+    aelem.href = image.src;
+    aelem.dataset["fancybox"] = "images";
+    aelem.dataset["rel"] = "fancybox-button";
+    aelem.classList.add("fancybox");
+    aelem.appendChild(image);
+    parent.insertBefore(aelem, next);
+  });
+</script>
+    <div class="reward-mask" style="display: none;">
+  <div class="reward-relative">
+    <span class="close" aria-hidden="true">x</span>
+    <div class="reward-body">
+      <h2>感谢您的支持，我会继续努力的!</h2>
+      <div class="reward-img-box">
+        <div style="position: relative; width: 140px; height: 140px;">
+          
+          
+          
+        </div>
+      </div>
+      <p class="reward-word">扫码打赏，你说多少就多少</p>
+      <p class="reward-tip"> </p>
+    </div>
+    <div class="bottom">
+      
+      
+    </div>
+  </div>
+</div>
+<style>
+  .reward-mask {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000054;
+  }
+
+  .reward-relative {
+    position: relative;
+    width: 480px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #fff;
+    top: 50%;
+    margin-top: -205px;
+  }
+
+  .reward-relative .close {
+    position: absolute;
+    right: 10px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #929292;
+  }
+
+  .reward-body {
+    padding: 40px 20px 20px;
+  }
+
+  .bottom {
+    display: flex;
+  }
+
+  .reward-btn {
+    text-align: center;
+  }
+
+  .reward-btn-text {
+    display: inline-block;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #ff9734;
+    color: #FFF;
+    margin-top: 20px;
+  }
+
+  .pay-text {
+    margin-top: 10px;
+    padding: 10px;
+    flex: 1;
+    transition: all .2s linear;
+  }
+
+  .pay-text:hover {
+    background-color: #a5a5a536;
+  }
+
+  .reward-body h2 {
+    padding-top: 10px;
+    text-align: center;
+    color: #a3a3a3;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 20px;
+  }
+
+  .reward-body h2:after,
+  .reward-body h2:before {
+    font-family: Arial, Helvetica, sans-serif;
+    background: 0 0;
+    width: 0;
+    height: 0;
+    font-style: normal;
+    color: #eee;
+    font-size: 80px;
+    position: absolute;
+    top: 20px;
+  }
+
+  .reward-body h2:before {
+    content: '\201c';
+    left: 50px;
+  }
+
+  .reward-body h2:after {
+    content: '\201d';
+    right: 80px;
+  }
+
+  .reward-img-box {
+    display: inline-block;
+    padding: 10px;
+    border: 6px solid #ea5f00;
+    margin: 0 auto;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .reward-img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 767px) {
+    .reward-relative {
+      height: 100%;
+      top: 0px;
+      margin-top: 0;
+      width: auto;
+    }
+
+    .reward-relative .bottom {
+      flex-direction: column;
+    }
+
+    .reward-relative .pay-text {
+      width: 80%;
+      margin: 5px auto;
+      border: 1px solid silver;
+      padding: 6px;
+      border-radius: 4px;
+    }
+
+    .reward-body h2:after {
+      right: 40px;
+    }
+
+    .reward-body h2:after,
+    .reward-body h2:before {
+      font-size: 60px;
+    }
+
+    .reward-body h2:before {
+      left: 20px;
+    }
+  }
+</style>
+<script>
+  !function () {
+    var mask = document.querySelector('.reward-mask');
+    let close = document.querySelector('.reward-relative .close');
+    let rewardBtn = document.querySelector('.reward-btn');
+
+    let zfb = document.querySelector('#zfb'),
+      wx = document.querySelector('#wx'),
+      zfbBtn = document.querySelector('#zfbBtn'),
+      wxBtn = document.querySelector('#wxBtn');
+
+    if (zfbBtn && wxBtn) {
+      zfbBtn.addEventListener('click', () => {
+        jQuery.Velocity(zfb, 'transition.slideLeftIn', {
+          duration: 400
+        });
+        jQuery.Velocity(wx, 'transition.slideRightOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+
+      wxBtn.addEventListener('click', () => {
+        jQuery.Velocity(wx, 'transition.slideRightIn', {
+          duration: 400
+        });
+        jQuery.Velocity(zfb, 'transition.slideLeftOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+    }
+
+    rewardBtn.addEventListener('click', (e) => {
+      jQuery.Velocity(mask, 'transition.slideDownIn', {
+        duration: 400
+      })
+    });
+
+    close.addEventListener('click', (e) => {
+      e.preventDefault();
+      jQuery.Velocity(mask, 'transition.slideUpOut', {
+        duration: 400
+      })
+    })
+  }()
+</script>
+
+  </div>
+</body>
+
+  <div class="search-mask" id="search_mask" style="display: none;">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input id="search" type="text" class="language" data-lan="search" placeholder="搜索">
+      </div>
+      <i id="close" class="fa fa-times-circle"></i>
+    </div>
+    <div class="stat-box">
+      <span id="stat_count">0</span><span class="language" data-lan="stat">条相关条目，使用了</span><span id="stat_times">0</span><span class="language" data-lan="stat-time">毫秒</span>
+      <hr>
+    </div>
+    <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://mygithubma.github.io/layout/"" data-c="
+          &lt;h1 id=&#34;高速信号布线&#34;&gt;高速信号布线&lt;/h1&gt;
+&lt;p&gt;1、走线长度，尽量短。&lt;br&gt;
+2、避免打孔换层。&lt;br&gt;
+3、高速信号的回流地要完整。&lt;br&gt;
+4、要包地处理，减少干扰或被干扰。&lt;br&gt;
+5、高速走线不能有锐角和直角，尽量弧度。&lt;br&gt;
+6、阻抗匹配：&lt;br&gt;
+------阻抗匹配就是指在信号传输中的源端、传输线、负载端之间的阻抗相等。阻抗匹配目的是为了防止信号反射，保证信号的完整性。如果阻抗不匹配，信号就会在源端和阻抗不匹配点之间来回反射，可能导致信号衰减、失真。&lt;br&gt;
+7、阻抗匹配方法：&lt;br&gt;
+------有串联电阻匹配或并联电阻匹配，可以放在源端或负载端，根据实际信号要求来选择电阻大小，一般是用于低频信号；&lt;br&gt;
+------有阻抗匹配网络设计，如Π网络、LC网络等，一般是用于高速信号，比如WIFI模组的RF走线上的匹配网络（WIFI模组和天线之间）。&lt;br&gt;
+8、EMC\EMI设计：&lt;br&gt;
+A、关键的高速信号和时钟信号要进行包地，要有完整的回流路径；&lt;br&gt;
+B、时钟信号上串的RC要放在源端，要包地良好及提供完整的回流路径；&lt;br&gt;
+C、预留在接口座子上的走线小电容，要靠近端子放置。这个小电容方便调试，不同电容值，其谐振频率不一样，可滤除不同频率，解决辐射问题。也可以用小电容来解决ESD问题（ESD采用的电容容值，也是利用电容的谐振频率来计算的）。&lt;br&gt;
+D、有飞线的接口座子，尽量放在板边，避免飞线跨过高速信号或时钟信号。&lt;br&gt;
+E、DCDC要使得提供电流的两个回流路径尽量短。&lt;br&gt;
+F、对于高速信号的传输线的阻抗要有明确的要求，比如HDMI走线100欧姆、USB走线90欧姆、RF走线50欧姆、MIPI走线100欧姆等。小系统DDR部分走线的单端阻抗50欧姆或差分阻抗100欧姆，但要参考原厂的Demo要求，有的并不是50欧姆或100欧姆。&lt;br&gt;
+G、如有屏蔽罩的话，屏蔽罩与PCB板上的地铜皮接触要尽量多，且多打地过孔。&lt;/p&gt;
+">Layout</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://mygithubma.github.io/ddr/"" data-c="
+          &lt;h1 id=&#34;区分&#34;&gt;区分：&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;---DDR1：大片+圆口。&lt;/li&gt;
+&lt;li&gt;---DDR2：小片+圆口。&lt;/li&gt;
+&lt;li&gt;---DDR3：小片+方口。&lt;/li&gt;
+&lt;li&gt;---DDR4：小片+方口、从有贴纸的方向看：DDR3的缺口在左边、DDR4的缺口在右边、DDR4将内存金手指设计为中间稍突出、边缘收矮。&lt;/li&gt;
+&lt;li&gt;从频率区分：&lt;/li&gt;
+&lt;li&gt;---频率在400MHz以下 DDR1&lt;/li&gt;
+&lt;li&gt;---频率在400到800MHz以内  DDR2&lt;/li&gt;
+&lt;li&gt;---频率大于1000MHz  DDR3&lt;/li&gt;
+&lt;li&gt;从PC区分：&lt;/li&gt;
+&lt;li&gt;---PC：一代&lt;/li&gt;
+&lt;li&gt;---PC2：二代&lt;/li&gt;
+&lt;li&gt;---PC3：三代&lt;/li&gt;
+&lt;li&gt;Kingston:金士顿&lt;/li&gt;
+&lt;li&gt;---标签：KVR400K64C3A/512&lt;/li&gt;
+&lt;li&gt;------频率为400MHz，容量为512M，DDR1&lt;/li&gt;
+&lt;li&gt;------一代内存条有266MHz、333MHz、400MHz。&lt;/li&gt;
+&lt;li&gt;---标签：KVR800D2N6/1G-SP&lt;/li&gt;
+&lt;li&gt;------频率为800MHz，容量为1G，DDR2&lt;/li&gt;
+&lt;li&gt;------二代内存条有533MHz、667MHz、800MHz。&lt;/li&gt;
+&lt;li&gt;---标签：KVR1333D3N9/2G&lt;/li&gt;
+&lt;li&gt;------频率为1333MHz，容量为2G，DDR3&lt;/li&gt;
+&lt;li&gt;------三代内存条有1333MHz、1600MHz、2133MHz。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;ddr1&#34;&gt;DDR1：&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;HY57V561620&lt;/li&gt;
+&lt;li&gt;原理图封装&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742911439377.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/li&gt;
+&lt;li&gt;PCB封装（SOP+BGA)&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742912253572.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742913904104.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;ddr2&#34;&gt;DDR2：&lt;/h1&gt;
+&lt;p&gt;-H5PS1G63EFR&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742991202494.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+-原理图封装&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742992601224.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+-PCB封装&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742993667401.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;ddr3&#34;&gt;DDR3：&lt;/h1&gt;
+&lt;p&gt;-H5TC8G63CMR&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742993934485.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742993989950.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+-PCB封装&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742994322193.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;ddr4&#34;&gt;DDR4:&lt;/h1&gt;
+&lt;p&gt;-K4A4G165WE-BCRC&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742994780978.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742994820096.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+-PCB封装&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742995085719.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+################################################################&lt;/p&gt;
+&lt;h1 id=&#34;ddr1和ddr2设计要点&#34;&gt;DDR1和DDR2设计要点：&lt;/h1&gt;
+&lt;p&gt;1、所有信号连线过孔数为2，线宽一样，走线方向一致，平行走线不得交叉，弯线平滑处理，不得有直角、锐角；3W原则：线距要为线宽的2倍。&lt;br&gt;
+2、等长差分线要先布好，例如时钟线。&lt;br&gt;
+---地址线：CK、CK#、CK+、CK-&lt;br&gt;
+---数据线：DQS&lt;br&gt;
+3、以时钟线长度为基准，等长布其它信号线。&lt;br&gt;
+忽略电源、地网络。&lt;br&gt;
+4、DDR2可以分为三类：&lt;br&gt;
+------差分时钟信号：CLK_N;CLK_P&lt;br&gt;
+------数据线DQ0-DQ15,数据掩码信号DQM0,DQM1,数据选通信号DQS*_N,DQS*_P&lt;br&gt;
+------地址线/控制线：除数据、时钟外的其他信号，如A0A12,WE,CS,BA02,CKE&lt;br&gt;
+------Class规则设置：&lt;br&gt;
+---------1、DATA_L_BUS：DQ0-DQ7、DQM0（数据掩码）、DQS0_N、DQS0_P（数据锁存）&lt;br&gt;
+---------2、DATA_H_BUS：DQ8-DQ15、DQM1(数据掩码)、DQS1_N、DQS1_P（数据锁存）&lt;br&gt;
+---------3、ADDR_BUS：除数据线外的其他信号&lt;br&gt;
+---------4、CLK_DIFF：CLK_N,CLK_P&lt;br&gt;
+------等长设计：&lt;br&gt;
+---------1、所有信号线参考差分时钟的长度作等长&lt;br&gt;
+---------2、DATA_L_BUS共11根走在同层，与差分时钟的长度误差在25mil&lt;br&gt;
+---------3、DATA_H_BUS共11根走在同层，与差分时钟的长度误差在25mil&lt;br&gt;
+---------4、ADDR_BUS:与差分时钟的长度误差200-300mil&lt;br&gt;
+------其他要求：&lt;br&gt;
+---------1、特性阻抗：单端50欧，差分100欧&lt;br&gt;
+---------2、保证完整参考平面&lt;br&gt;
+---------3、VREF电容要靠近相关的电源管脚，线宽尽量在40mil以上&lt;br&gt;
+---------4、信号线不能跨分割&lt;br&gt;
+---------5、DDR2走线区域不允许有其他信号穿过&lt;br&gt;
+---------6、去耦电容要靠近相关IC的电源管脚&lt;br&gt;
+---------7、尽量采用多层板&lt;br&gt;
+5、DDR3、DDR4设计要点：&lt;br&gt;
+------DDR信号线分组：&lt;br&gt;
+将DDR布线的信号进行分组，可以分为时钟线、地址线、命令控制线、数据线四部分。&lt;br&gt;
+(1)、时钟线的布线规则：为高速差分信号线，按照差分布线规则进行布线，而且需要在接收端进行阻抗匹配。&lt;br&gt;
+(2)、地址线与命令控制线布线规则：地址和命令信号线要进行端接匹配，通过匹配电阻接端接电源VTT。&lt;br&gt;
+(3)、数据线布线规则：数据线由于采用了ODT技术，因此不需要外部进行端接匹配。另外需要注意的是：对于时钟线、地址线、命令控制线和数据线，对等长布线要求较高，除了每一组信号线内部要求等长布线以外，还要保持时钟线、地址线和数据线等组间信号线尽量保持等长。尽量保持同组信号线保持在同层，避免跨层布线。对于差分信号线，为了避免信号间的串扰，要使用3W原则进行布线。除此之外，为了使DDR电路具备完整的参考地平面和电源平面，因此在DDR保护区内不得出现与DDR无关的信号且信号走线的参考平面不能中断。DDR的PCB单端走线阻抗一般控制为50欧，差分走线阻抗一般控制为100欧。对于多块DDR芯片的布局布线，根据菊花链的拓扑结构进行布置即可。&lt;br&gt;
+------DDR时序同步：&lt;br&gt;
+作为源同步系统的DDR电路设计来说，时序控制至关重要，共有三组时序设计要求如下：&lt;br&gt;
+(1)、DQ和DQS的等长关系：所有数据线DQ参考DQS的差分线等长，DQS差分线误差控制在5mil，所有数据线误差控制在DQS目标长度的15mil。&lt;br&gt;
+(2)、时钟CLK和地址线、命令控制线的等长关系：所有地址和命令控制线参考差分时钟线CLK等长，所有地址和命令控制线误差控制在时钟CLK目标长度的50mil。&lt;br&gt;
+(3)、时钟CLK和DQS线的等长关系：对于DDR2来说，时钟CLK和DQS线的时序关系是松散的时序关系，它们之间的时序参数为，一般控制在100mil即可，但是在DDR3中，时钟CLK和DQS线的时序没有严格要求。&lt;br&gt;
+------DDR终端匹配：&lt;br&gt;
+ODT为内部核心终结引脚，从DDR2开始内存内部集成了终结电阻器，把原来在主板上的终结电路移植到了内存芯片内部。当内存芯片处于写数据状态时，此时内存颗粒是接收端，需要端接匹配电阻，因此需要打开ODT功能；同理当内存芯片处于读数据状态时，此时内存颗粒是发送端，不需要端接电阻，因此需要关闭ODT功能。正是有了ODT功能，DDR内存在PCB布线的时候数据线不需要进行端接匹配处理，因为内存芯片内部集成了端接电阻。&lt;br&gt;
+------DDR电源：&lt;br&gt;
+DDR一般需要3种电源，分别为：VDDQ、VREF、VTT。其中VTT和VREF的电平是一样的，为VDDQ电平的一半。VREF消耗的电流很小，可以通过分压电阻网络从VDDQ分压得到；而VTT是端接电源，电流会比较大，能达到百毫安级别，如果使用分压电阻功耗消耗过大，因此需要单独的DDR电源调节器芯片来生成VTT。VTT端接电源线的过流能力需要考虑周到，尽量加粗VTT的电源线以增强其载流能力。&lt;br&gt;
+------等长的目的就是为了等时，绕等长时需要注意以下几点：&lt;br&gt;
+1.确认芯片是否有Pin-delay,绕线时要确保Pin-delay开关已经打开；&lt;br&gt;
+2.同组信号走在同层，保证不会因换层影响实际的等时；同样的换层结构，换层前后的等长要匹配，即时等长；不同层的传播延时需要考虑，如走在表层与走在内层，其传播速度是不一样的，所以在走线的时候需要考虑，表层走线尽量短，让其差别尽量小（这也是为什么Intel的很多GUIDE上面要求，表层的走线长度不超过250MIL等要求的原因）；&lt;br&gt;
+3.蛇形绕线时单线按3W，差分按5W绕线（W为线宽）。且保证各BUS信号组内间距按3H， 不同组组间间距为5H （H为到主参考平面间距），DQS和CLK 距离其他信号间距做到5H以上。&lt;/p&gt;
+">DDR</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://mygithubma.github.io/dian-li-dian-zi-ji-zhu/"" data-c="
+          &lt;p&gt;1、电力二极管：&lt;br&gt;
+静态特性：&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742740066190.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+动态特性：&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742740108888.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+主要类型：普通二极管、快恢复二极管、肖特基二极管&lt;br&gt;
+2、压敏电阻&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742740142505.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+3、共模电感&lt;br&gt;
+也叫共模扼流圈，共模电感是一个以铁氧体为磁芯的共模干扰抑制器件，它由两个尺寸相同，匝数相同的线圈对称地绕制在同一个铁氧体环形磁芯上，形成一个四端器件，要对于共模信号呈现出大电感具有抑制作用，而对于差模信号呈现出很小的漏电感几乎不起作用。原理是流过共模电流时磁环中的磁通相互叠加，从而具有相当大的电感量，对共模电流起到抑制作用，而当两线圈流过差模电流时，磁环中的磁通相互抵消，几乎没有电感量，所以差模电流可以无衰减地通过。因此共模电感在平衡线路中能有效地抑制共模干扰信号，而对线路正常传输的差模信号无影响。&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742740185140.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742740192026.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+4、滤波电路&lt;br&gt;
+电容滤波&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742740234802.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+图2(b)为电容滤波电路。由于电容 C1 对直流电相当于开路，这样整流电路输出的直流电压不能通过C1 到地，只有加到负载 RL 图为 RL 上。对于整流电路输出的交流成分，因 C1 容量较大，容抗较小，交流成分通过 C1 流到地端，而不能加到负载 RL。这样，通过电容 C1 的滤波， 从单向脉动性直流电中取出了所需要的直流电压 +U。滤波电容 C1 的容量越大，对交流成分的容抗越小，使残留在负载 RL 上的交流成分越小，滤波效果就越好。&lt;br&gt;
+电感滤波&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742740268142.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+对于整流电路输出的交流成分，因 L1 电感量较大，感抗较大，对交流成分产生很大的阻碍作用，阻止了交流电通过 C1 流到加到负载 RL。这样，通过电感 L1 的滤波，从单向脉动性直流电中取出了所需要的直流电压 +U。滤波电感 L1 的电感量越大，对交流成分的感抗越大，使残留在负载 RL 上的交流成分越小，滤波效果就越好，但直流电阻也会增大。&lt;br&gt;
+pi型RC滤波&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742740300171.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+(1)这一电路的滤波原理是：从整流电路输出的电压首先经过 C1 的滤波，将大部分的交流成分滤除，然后再加到由 R1 和 C2 构成的滤波电路中。C2 的容抗与 R1 构成一个分压电路，因 C2 的容抗很小，所以对交流成分的分压衰减量很大，达到滤波目的。对于直流电而言，由于 C2 具有隔直作用，所以 R1 和 C2 分压电路对直流不存在分压衰减的作用，这样直流电压通过 R1 输出。&lt;br&gt;
+(2)在 R1 大小不变时，加大 C2 的容量可以提高滤波效果，在 C2 容量大小不变时，加大 R1 的阻值可以提高滤波效果。但是，滤波电阻 R1 的阻值不能太大，因为流过负载的直流电流要流过 R1，在 R1 上会产生直流压降，使直流输出电压 Uo2 减小。R1 的阻值越大，或流过负载的电流越大时，在 R1 上的压降越大，使直流输出电压越低。&lt;br&gt;
+(3)C1 是第一节滤波电容，加大容量可以提高滤波效果。但是 C1 太大后，在开机时对 C1 的充电时间很长，这一充电电流是流过整流二极管的，当充电电流太大、时间太长时，会损坏整流二极管。所以采用这种 π 型 RC 滤波电路可以使 C1 容量较小，通过合理设计 R1 和 C2 的值来进一步提高滤波效果。&lt;br&gt;
+(4)这一滤波电路中共有 3 个直流电压输出端，分别输出 Uo1、Uo2 和 Uo3 三组直流电压。其中，Uo1 只经过电容 C1 滤波;Uo2 则经过了 C1、 R1 和 C2 电路的滤波，所以滤波效果更好，Uo2 中的交流成分更小;Uo3 则经过了 2 节滤波电路的滤波，滤波效果最好，所以 Uo3 中的交流成分最少。&lt;br&gt;
+(5)3 个直流输出电压的大小是不同的。Uo1 电压最高，一般这一电压直接加到功率放大器电路，或加到需要直流工作电压最高、工作电流最大的电路中;Uo2 电压稍低，这是因为电阻 R1 对直流电压存在电压降;Uo3 电压最低，这一电压一般供给前级电路作为直流工作电压，因为前级电路的直流工作电压比较低，且要求直流工作电压中的交流成分少。&lt;br&gt;
+pi型LC滤波电路&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742740337737.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在图 5 的电路中，整流电路输出的单向脉动性直流电压先经电容 C1 滤波，去掉大部分交流成分，然后再加到 L1 和 C2 滤波电路中。&lt;br&gt;
+对于交流成分而言，L1 对它的感抗很大，这样在 L1 上的交流电压降大，加到负载上的交流成分小。&lt;br&gt;
+对直流电而言，由于 L1 不呈现感抗，相当于通路，同时滤波电感采用的线径较粗，直流电阻很小，这样对直流电压基本上没有电压降，所以直流输出电压比较高，这是采用电感滤波器的主要优点。&lt;/p&gt;
+">电力电子技术</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://mygithubma.github.io/fan-ji-kai-guan-dian-yuan/"" data-c="
+          &lt;p&gt;&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739261573.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739266954.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739272011.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739277085.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+保险丝：电流过大时烧坏，保护后级电路。&lt;br&gt;
+压敏电阻：过压保护，电压过高时短路，烧坏保险丝，保护后级电路。&lt;br&gt;
+NTC：负温度系数的热敏电阻，瞬间电流过大时，防止浪涌电流。&lt;br&gt;
+共模电感：也叫共模扼流圈，共模电感是一个以铁氧体为磁芯的共模干扰抑制器件，它由两个尺寸相同，匝数相同的线圈对称地绕制在同一个铁氧体环形磁芯上，形成一个四端器件，要对于共模信号呈现出大电感具有抑制作用，而对于差模信号呈现出很小的漏电感几乎不起作用。原理是流过共模电流时磁环中的磁通相互叠加，从而具有相当大的电感量，对共模电流起到抑制作用，而当两线圈流过差模电流时，磁环中的磁通相互抵消，几乎没有电感量，所以差模电流可以无衰减地通过。因此共模电感在平衡线路中能有效地抑制共模干扰信号，而对线路正常传输的差模信号无影响。&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739300591.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+回路面积要尽可能小&lt;br&gt;
+从理论上（即假设电容为纯电容）说，电容越大，阻抗越小，通过的频率也越高。 但实际上超过1μF 的电容大多为电解电容，有很大的电感成份，所以频率高后反而阻抗会增大。 有时会看到有一个电容量较大电解电容并联了一个小电容，这时大电容通低频，小电容通高频。 电容的作用就是通高阻低，通高频阻低频。 电容越小低频越容易通过，电容越大高频越容易通过&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739330738.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+两个回路面积要小&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739353848.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+回路面积要小&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739378366.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+负载电阻：空载运行设备容易坏。&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739404865.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+4脚和6脚走线不能挨在一起，反馈信号属于敏感信号，驱动信号属于干扰信号。隔地。&lt;br&gt;
+R26和R22靠近MOS管，不能把310V高电压带到U1.&lt;br&gt;
+C18：给C18充电，SENSE检测电流。&lt;br&gt;
+R22:当MOS管关断的时候,拉低栅极,避免误触发.&lt;br&gt;
+R27:图中的 R27 是一个 1Ω、功率为 2W 的电阻，它主要起到电流采样的作用。在 MOS 开关电路工作时，负载电流会流经 R27，根据欧姆定律，R27 两端会产生与电流成正比的电压降。这个电压信号可以被 OCP 电路（过功率保护电路）检测到，当电流过大，即 R27 两端电压达到一定阈值时，OCP 电路会触发保护动作，关断 MOS 管，从而防止电路因过流而损坏 。&lt;br&gt;
+OCP 电路即过流保护（Over - Current Protection）电路.&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739445525.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+D4、R15加速开关管关断。&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739470736.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+Y电容：热地、冷地。&lt;br&gt;
+Y电容和光耦靠近变压器（一上一下）&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739496647.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+当MOS管关断的时候，变压器1脚接到D3，流过电阻R5继续回到变压器。&lt;br&gt;
+R5\D3\C3靠近变压器布局。&lt;br&gt;
+R7\R3\R9R布局靠近310V高压。&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739519526.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+单点接地：MOS管的HGND、Y电容的HGND、主芯片的地，分别接到整流桥后面大电容的地。&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739546507.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+● 电压采样：电阻 R25 和 R32 组成分压电路，对输出电压进行采样，将采样后的电压送入 TL431 的参考端。当输出电压变化时，采样电压也随之改变。&lt;br&gt;
+● 基准比较与放大：TL431 是一个精密的可调基准源，内部会将采样电压与 2.5V 的基准电压进行比较。若采样电压偏离设定值，TL431 会调整其输出电流，从而改变通过光耦 PC1B 中发光二极管的电流。&lt;br&gt;
+● 光耦隔离与反馈：光耦 PC1B 起到电气隔离作用，其内部发光二极管的发光强度随通过电流变化，进而控制光耦中光敏晶体管的导通程度。通过光耦的反馈，将输出电压的变化信息传递到前级控制电路，实现对输出电压的调节，保持输出电压稳定。&lt;br&gt;
+● 其他元件作用：电容 C20 与电阻 R31 组成 RC 网络，可对信号进行滤波和相位补偿，防止电路产生振荡；电阻 R21 用于限制通过光耦发光二极管的电流；R24 在光耦部分起到一定的限流和保护作用 。&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739612978.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739619891.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+高压低压电气隔离4.6mm&lt;br&gt;
+爬电距离6.4mm&lt;br&gt;
+火线和零线、普通线之间2mm&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739644447.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+开槽增大爬电距离&amp;gt;0.8mm&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739668657.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+回路面积尽可能小&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739693693.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+导流槽，不能直接铺上去&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739811036.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739817502.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739822669.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739827577.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739834711.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739841218.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+红胶工艺：竖着摆。&lt;br&gt;
+https://blog.csdn.net/qq_33559992/article/details/121118817&lt;/p&gt;
+">反激开关电源</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://mygithubma.github.io/kai-guan-dian-yuan/"" data-c="
+          &lt;p&gt;1、全桥逆变电路：&lt;br&gt;
+https://blog.csdn.net/qq_42078934/article/details/127140491&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742738707629.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+2、半桥电路：&lt;br&gt;
+https://blog.csdn.net/qq_42078934/article/details/127073851&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742738762019.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+3、PUSH-PULL推挽电路&lt;br&gt;
+https://blog.csdn.net/chenyongxyzg/article/details/135678046&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742738804465.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+4、FlyBack单管反激&lt;br&gt;
+https://blog.csdn.net/qq_42945764/article/details/105026626&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742738844436.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+5、Buck/Boost电路&lt;br&gt;
+https://blog.csdn.net/qq_58845450/article/details/134695390&lt;br&gt;
+6、Boost升压电路&lt;br&gt;
+https://blog.csdn.net/m0_66099690/article/details/128687901&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742738938807.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+7、Buck降压电路&lt;br&gt;
+https://blog.csdn.net/m0_66099690/article/details/128687901&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742738992396.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739000442.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+8、电源防雷模块（11种）（压敏电阻、气体放电管）&lt;br&gt;
+（1）、单相并联式防雷器：&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742739079471.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+正常工作的时候，压敏电阻两端之间的阻抗是非常大的，可以近似地看成是开路的（实际上存在着非常微小的漏电流，一般10-20uA）。一旦雷击能量来了，会有瞬间高压加载压敏电阻上，这个时候压敏电阻就会被击穿，呈现出非常低的阻抗。这个内阻在雷电这个能量源的内阻Re面前，相对来说非常小，那么根据电阻分压的原理压敏电阻上的电压就会非常小。压敏电阻和后级负载是并联关系，因为压敏电阻相对负载电阻来说也非常小，所以大量能量都是从压敏电阻流过，被压敏电阻吸收了。通过这样的方式，就实现了对负载的保护。&lt;/p&gt;
+">开关电源：</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://mygithubma.github.io/kuai-su-que-ding-2-ceng-dao-8-ceng-ban-de-die-ceng-she-ji/"" data-c="
+          &lt;p&gt;元件面下面（第二层）为地平面，提供器件屏蔽层以及为顶层布线提供参考平面；敏感信号层应该与一个内电层相邻（内部电源/地层），利用内电层的大铜膜来为信号层提供屏蔽。电路中的高速信号传输层应该是信号中间层，并且夹在两个内电层之间。这样两个内电层的铜膜可以为高速信号传输提供电磁屏蔽，同时也能有效地将高速信号的辐射限制在两个内电层之间，不对外造成干扰。&lt;br&gt;
+所有信号层尽可能与地平面相邻。&lt;br&gt;
+尽量避免两信号层直接相邻；相邻的信号层之间容易引入串扰，从而导致电路功能失效。在两信号层之间加入地平面可以有效地避免串扰。&lt;br&gt;
+主电源尽可能与其对应地相邻；&lt;br&gt;
+对于母板的层排布，现有母板很难控制平行长距离布线，对于板级工作频率在50MHZ以上的（50MHZ以下的情况可参照，适当放宽），建议排布原则：&lt;br&gt;
+● 元件面、焊接面为完整的地平面（屏蔽）；&lt;br&gt;
+●无相邻平行布线层；&lt;br&gt;
+●所有信号层尽可能与地平面相邻；&lt;br&gt;
+●关键信号与地层相邻，不跨分割区。&lt;br&gt;
+多个接地的内电层可以有效地降低接地阻抗。例如，A信号层和B信号层采用各自单独的地平面，可以有效地降低共模干扰。&lt;br&gt;
+对于两层板来说，由于板层数量少，已经不存在叠层的问题。控制EMI辐射主要从布线和布局来考虑；单层板和双层板的电磁兼容问题越来越突出。造成这种现象的主要原因就是因是信号回路面积过大，不仅产生了较强的电磁辐射，而且使电路对外界干扰敏感。要改善线路的电磁兼容性，最简单的方法是减小关键信号的回路面积。关键信号：从电磁兼容的角度考虑，关键信号主要指产生较强辐射的信号和对外界敏感的信号。能够产生较强辐射的信号一般是周期性信号，如时钟或地址的低位信号。对干扰敏感的信号是指那些电平较低的模拟信号。单、双层板通常使用在低于10KHz的低频模拟设计中:1）在同一层的电源走线以辐射状走线，并最小化线的长度总和；2）走电源、地线时，相互靠近；在关键信号线边上布一条地线，这条地线应尽量靠近信号线。这样就形成了较小的回路面积，减小差模辐射对外界干扰的敏感度。当信号线的旁边加一条地线后，就形成了一个面积最小的回路，信号电流肯定会取道这个回路，而不是其它地线路径。3）如果是双层线路板，可以在线路板的另一面，紧靠近信号线的下面，沿着信号线布一条地线，一线尽量宽些。这样形成的回路面积等于线路板的厚度乘以信号线的长度。&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742738404172.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+SIG －GND(PWR－) PWR (GND－) SIG；2. GND－SIG(PWR)－SIG(PWR)－GND；对于以上两种叠层设计，潜在的问题是对于传统的1.6mm（62mil ）板厚。层间距将会变得很大，不仅不利于控制阻抗，层间耦合及屏蔽；特别是电源地层之间间距很大，降低了板电容，不利于滤除噪声。对于第一种方案，通常应用于板上芯片较多的情况。这种方案可得到较好的SI 性能，对于EMI性能来说并不是很好，主要要通过走线及其他细节来控制。主要注意：地层放在信号最密集的信号层的相连层，有利于吸收和抑制辐射；增大板面积，体现20H规则。对于第二种方案，通常应用于板上芯片密度足够低和芯片周围有足够面积( 放置所要求的电源覆铜层) 的场合。此种方案PCB的外层均为地层，中间两层均为信号 / 电源层。信号层上的电源用宽线走线，这可使电源电流的路径阻抗低，且信号微带路径的阻抗也低，也可通过外层地屏蔽内层信号辐射。从EMI控制的角度看， 这是现有的最佳4 层PCB结构。主要注意：中间两层信号、电源混合层间距要拉开，走线方向垂直，避免出现串扰；适当控制板面积，体现20H规则；如果要控制走线阻抗，上述方案要非常小心地将走线布置在电源和接地铺铜岛的下边。另外，电源或地层上的铺铜之间应尽可能地互连在一起，以确保DC和低频的连接性。&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742738439044.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+对于芯片密度较大、时钟频率较高的设计应考虑6 层板的设计，推荐叠层方式：1.SIG－GND－SIG－PWR－GND－SIG；对于这种方案，这种叠层方案可得到较好的信号完整性，信号层与接地层相邻，电源层和接地层配对，每个走线层的阻抗都可较好控制，且两个地层都是能良好的吸收磁力线。并且在电源、地层完整的情况下能为每个信号层都提供较好的回流路径。&lt;br&gt;
+2.GND－SIG－GND－PWR－SIG －GND；对于这种方案，该种方案只适用于器件密度不是很高的情况，这种叠层具有上面叠层的所有优点，并且这样顶层和底层的地平面比较完整，能作为一个较好的屏蔽层来使用。需要注意的是电源层要靠近非主元件面的那一层，因为底层的平面会更完整。因此， EMI性能要比第一种方案好。小结：对于六层板的方案, 电源层与地层之间的间距应尽量减小，以获得好的电源、地耦合。但62mil 的板厚, 层间距虽然得到减小, 还是不容易把主电源与地层之间的间距控制得很小。对比第一种方案与第二种方案，第二种方案成本要大大增加。因此，我们叠层时通常选择第一种方案。设计时，遵循20H规则和镜像层规则设计。&lt;br&gt;
+案例：&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742738531485.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742738536538.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">快速确定2层到8层板的叠层设计</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://mygithubma.github.io/dian-yuan-fen-ge/"" data-c="
+          &lt;p&gt;a) 小电源优先在信号层铺铜，其次通过满足载流的走线连接；&lt;br&gt;
+b) 12V、5V 电源如果是开关电源的输入电源，优先在信号层处理掉（表层、内层信号层），如果一定要在平面层分割，不要用作重要信号线的参考平面；这样可以有效减小此类“高”压对信号的影响；&lt;br&gt;
+c) 如果分割出的电源平面用作信号的参考平面，电源平面优先作为用电模块的信号参考平面；如果有多个电源，优先参考电压低的电源；例如DDR3，使用的是1.5V 电源，则1.5V 电源平面可以用作DDR3 模块的信号参考平面，但尽量不要参考3.3V 电源或者其他电源；（通常DDR3 数据参考地平面，地址控制信号参考电源平面）&lt;br&gt;
+d) 电源平面和地平面紧相邻，如果电源平面相邻的是信号层，尽量在信号层多补一些GND 铜，并打GND 过孔；&lt;br&gt;
+e) 分割线宽度要合理；分割线宽度和两个电源的电压差有关，一般推荐：模数之间分割宽度：25mil；数字之间分割宽度15mil，局部可以更小一些；分割线宽度也可以根据板上空间情况灵活调整，原则上越大越好；&lt;br&gt;
+f) 机壳地分割隔离宽度优先2mm，局部根据情况调整，一般要求不小于1mm；其他信号远离机壳地，包括信号线、过孔、铺铜等；&lt;br&gt;
+l）确认电源、地能承载足够的电流，过孔数量是否满足承载要求。&lt;br&gt;
+（估算方法：外层铜厚1oz时1A/mm线宽，内层0.5A/mm线宽）&lt;br&gt;
+2）为降低平面的边缘辐射效应，在电源层与地层间要尽量满足20H原则。&lt;br&gt;
+（条件允许的话，电源层的缩进得越多越好）。&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742737904115.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742737963448.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742737986392.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742738021528.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742738029138.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742738070600.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742738078148.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742738126994.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742738167536.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742738173345.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742738179190.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">电源分割</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://mygithubma.github.io/ge-xing-ye-de-pcb-she-ji-gui-fan/"" data-c="
+          &lt;p&gt;1、铝基板PCB设计：&lt;br&gt;
+铝基板往往应用於功率器件，功率密度大，所以铜箔比较厚。如果使用到3oz以上的铜箔，厚铜箔的 蚀刻加工需要工程设计线宽补偿，否则，蚀刻後线宽就会超差。 铝基板的铝基面在PCB加工过程中必须事先用保护膜给予保护，否则，一些化学药品会浸蚀铝基面， 导致外观受损。且保护膜极易被碰伤，造成缺口，这就要求整个PCB加工过程必须插架。 玻纤板锣板使用的铣刀硬度比较小，而铝基板使用的铣刀硬度大。加工过程中生产玻纤板铣刀转速快， 而生产铝基板至少慢了三分之二。 电脑铣边玻纤板只是使用机器本身的散热系统散热就可以了，但是加工铝基板就必须另外的针对锣头 加酒精散热。&lt;br&gt;
+2、嵌入式PCB设计：&lt;br&gt;
+理清电路原理的信号走向&lt;br&gt;
+理清电路原理的电源走向&lt;br&gt;
+模块化布局设计&lt;br&gt;
+布局遵循先接口、大芯片、小器件的顺序&lt;br&gt;
+模块化布线设计&lt;br&gt;
+布线遵循先短线后长线的顺序&lt;br&gt;
+整板走线要优化处理，线尽量等间距，过孔要对齐等距&lt;br&gt;
+晶振模块输入输出线要加粗及包地处理&lt;br&gt;
+差分线要控制阻抗及包地处理&lt;br&gt;
+3、工控类PCB设计：&lt;br&gt;
+理清电路原理的信号走向&lt;br&gt;
+理清电路原理的电源走向&lt;br&gt;
+模块化布局设计&lt;br&gt;
+布局遵循先接口、大芯片、小器件的顺序&lt;br&gt;
+模块化布线设计&lt;br&gt;
+布线遵循先短线后长线的顺序&lt;br&gt;
+整板走线要优化处理，线尽量等间距，过孔要对齐等距&lt;br&gt;
+晶振模块输入输出线要加粗及包地处理&lt;br&gt;
+差分线要控制阻抗及包地处理&lt;br&gt;
+4、消费类PCB设计：&lt;br&gt;
+理清电路原理的信号走向&lt;br&gt;
+理清电路原理的电源走向&lt;br&gt;
+模块化布局设计&lt;br&gt;
+布局遵循先接口、大芯片、小器件的顺序&lt;br&gt;
+模块化布线设计&lt;br&gt;
+布线遵循先短线后长线的顺序&lt;br&gt;
+整板走线要优化处理，线尽量等间距，过孔要对齐等距&lt;br&gt;
+晶振模块输入输出线要加粗及包地处理&lt;br&gt;
+差分线要控制阻抗及包地处理&lt;br&gt;
+5、汽电类PCB设计：&lt;br&gt;
+理清电路原理的信号走向&lt;br&gt;
+理清电路原理的电源走向&lt;br&gt;
+模块化布局设计&lt;br&gt;
+布局遵循先接口、大芯片、小器件的顺序&lt;br&gt;
+模块化布线设计&lt;br&gt;
+布线遵循先短线后长线的顺序&lt;br&gt;
+整板走线要优化处理，线尽量等间距，过孔要对齐等距&lt;br&gt;
+晶振模块输入输出线要加粗及包地处理&lt;br&gt;
+差分线要控制阻抗及包地处理&lt;br&gt;
+6、高频类PCB设计：&lt;br&gt;
+射频走线建议：&lt;br&gt;
+尽可能使用四层板，模块和天线之间的射频 PCB 走线，需要进行50Ω阻抗控制，且长度尽量短。射频线周围要用接地铜箔包裹，接地铜箔距离射频线的间距要求为 2 倍射频线线宽以上，接地铜箔要多打接地过孔，保证接地阻抗尽量小。为减小RF 焊盘较大导致寄生电容较大而引起的天线性能降低的可能性，模块射频焊盘下第一层和第二层都建议挖空。双层板无法控制阻抗，所以在双层板走线时，尽量把射频线走短（弧线），然后线宽在30&lt;sub&gt;40mil，走线到周围地铜箔距离在1&lt;/sub&gt;1.5 倍线宽之间。建议采用周边的地铜箔作为参考平面，根据走线到地铜箔的间距以及走线线宽来计算阻抗（也可以要求板厂做50 欧姆阻抗匹配，因为阻抗也跟材质有关——介电常数）。一般推荐采用π型滤波，即串联一个电感，在电感两端并联1 个到地电容，在不需要进行匹配时，可以不焊电容，将电感用0 欧姆电阻替代。如果经过较长走线，则中间需要增加匹配网络，如下图所示。&lt;br&gt;
+&lt;img src=&#34;https://mygithubma.github.io/post-images/1742737755182.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+7、通信类PCB设计：&lt;br&gt;
+理清电路原理的信号走向&lt;br&gt;
+理清电路原理的电源走向&lt;br&gt;
+模块化布局设计&lt;br&gt;
+布局遵循先接口、大芯片、小器件的顺序&lt;br&gt;
+模块化布线设计&lt;br&gt;
+布线遵循先短线后长线的顺序&lt;br&gt;
+整板走线要优化处理，线尽量等间距，过孔要对齐等距&lt;br&gt;
+晶振模块输入输出线要加粗及包地处理&lt;br&gt;
+差分线要控制阻抗及包地处理&lt;br&gt;
+8、军工类PCB设计：&lt;br&gt;
+理清电路原理的电源走向&lt;br&gt;
+模块化布局设计&lt;br&gt;
+布局遵循先接口、大芯片、小器件的顺序&lt;br&gt;
+模块化布线设计&lt;br&gt;
+布线遵循先短线后长线的顺序&lt;br&gt;
+整板走线要优化处理，线尽量等间距，过孔要对齐等距&lt;br&gt;
+晶振模块输入输出线要加粗及包地处理&lt;br&gt;
+差分线要控制阻抗及包地处理&lt;/p&gt;
+">各行业的PCB设计规范</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://mygithubma.github.io/conda-ming-ling-xing/"" data-c="
+          &lt;p&gt;conda --version 查看conda的版本&lt;br&gt;
+conda config --show  查看conda的环境配置&lt;br&gt;
+#设置清华镜像&lt;br&gt;
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/&lt;br&gt;
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/&lt;br&gt;
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/&lt;br&gt;
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/&lt;br&gt;
+#设置bioconda&lt;br&gt;
+conda config --add channels bioconda&lt;br&gt;
+conda config --add channels conda-forge&lt;br&gt;
+#设置搜索时显示通道地址&lt;br&gt;
+conda config --set show_channel_urls yes&lt;br&gt;
+conda env list 查看conda的环境&lt;br&gt;
+conda activate env 激活环境&lt;br&gt;
+conda deactivate  env 退出环境&lt;br&gt;
+conda remove --name env_name --all 删除指定环境&lt;br&gt;
+conda remove --name env_name package_name删除环境中的指定包&lt;br&gt;
+conda create -n env_name python=3.9 创建环境&lt;br&gt;
+conda info 查看当前环境&lt;/p&gt;
+">conda命令行</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://mygithubma.github.io/xteminal-ming-ling-xing/"" data-c="
+          &lt;p&gt;ssh 192.168.31.143 连接树莓派&lt;br&gt;
+su - root 进入root&lt;br&gt;
+vncserver-virtual 启动vncserver&lt;br&gt;
+改变虚拟界面分辨率&lt;br&gt;
+sudo raspi-config&lt;br&gt;
+vncserver-virtual -geometry 1920x1080&lt;br&gt;
+vncserver-virtual -kill :1结束虚拟界面&lt;br&gt;
+scp mzc@192.168.31.143:/E:... /home/&lt;/p&gt;
+">Xteminal命令行</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://mygithubma.github.io/yolo-chuang-jian-huan-jing-ming-ling-xing/"" data-c="
+          &lt;p&gt;1、conda create -n XXX(环境名）python=X.X(该环境中希望安装的python版本。  --yolo -python3.9&lt;br&gt;
+2、conda activate yolo --进入创建的虚拟环境&lt;br&gt;
+3、conda list --查看环境配置&lt;br&gt;
+4、conda install cudnn==8.1.0&lt;br&gt;
+5、cmd命令：&lt;br&gt;
+cd /    回到根目录&lt;br&gt;
+cd ../  回到上一级目录&lt;br&gt;
+进入某一目录：直接D:或者E:&lt;br&gt;
+6、pip install -r requirements.txt&lt;br&gt;
+7、conda info --envs  查看创建的虚拟环境路径&lt;br&gt;
+8、报错：&lt;br&gt;
+ckagesNotFoundError: The following packages are not available from current channels:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;torchvision==0.10.0+cu111&lt;/li&gt;
+&lt;li&gt;torch==1.9.0+cu111&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Current channels:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch&lt;/li&gt;
+&lt;li&gt;https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/menpo&lt;/li&gt;
+&lt;li&gt;https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda&lt;/li&gt;
+&lt;li&gt;https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2&lt;/li&gt;
+&lt;li&gt;https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge&lt;/li&gt;
+&lt;li&gt;defaults&lt;/li&gt;
+&lt;li&gt;https://repo.anaconda.com/pkgs/main&lt;/li&gt;
+&lt;li&gt;https://repo.anaconda.com/pkgs/r&lt;/li&gt;
+&lt;li&gt;https://repo.anaconda.com/pkgs/msys2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To search for alternate channels that may provide the conda package you&#39;re&lt;br&gt;
+looking for, navigate to&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;https://anaconda.org
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and use the search bar at the top of the page.&lt;br&gt;
+解决：在该链接https://anaconda.org下搜索&lt;br&gt;
+9、pillow和pytorch、numpy版本问题，安装卸载使用pip，不用conda，解决。&lt;br&gt;
+10、安装pyqt：&lt;br&gt;
+pip install PyQt5&lt;br&gt;
+pip install pyqt5-tools -i https://pypi.tuna.tsinghua.edu.cn/simple&lt;br&gt;
+11、conda create -n XXX --clone yolo5   复制已有环境&lt;br&gt;
+12、conda env list  查看创建的环境&lt;br&gt;
+13、conda config --show channels 查看源&lt;br&gt;
+14、conda config --remove channels https:// 删除源&lt;br&gt;
+15、conda clean --all 清除缓存&lt;br&gt;
+16、conda config --add channels ... 添加源&lt;br&gt;
+17、nvcc --version 查看CUDA版本&lt;br&gt;
+18、watch -n 1 nvidia-smi 查看GPU使用情况&lt;br&gt;
+19、dwebp input.webp -o output.png 将webp文件转换为png文件&lt;br&gt;
+20、conda env remove -n myenv 删除环境&lt;/p&gt;
+">Yolo创建环境命令行：</a>
+      </div>
+      
+    </div>
+    <div class="page">
+      <div id="page_ul"></div>
+    </div>
+  </div>
+</div>
+<script>
+  !function () {
+    let searchMask = document.querySelector('#search_mask');
+    let result = document.querySelector('#result');
+    let items = document.querySelectorAll('.item');
+    let searchBox = document.querySelector('#search');
+    let statCount = document.querySelector('#stat_count');
+    let statTimes = document.querySelector('#stat_times');
+    let pageUl = document.querySelector('#page_ul');
+    let close = document.querySelector('#close');
+    
+    close.addEventListener('click', function() {
+      searchMask.style = 'display: none;'
+    })
+
+    let finds = [];
+    let contents = [];
+    let pageSize = 10;
+    items.forEach(item => {
+      let a = item.querySelector('a');
+      contents.push({
+        title: a.innerText,
+        details: a.dataset.c,
+        link: a.href
+      })
+      item.remove();
+    })
+
+    function insertStr(soure, start, count) {
+      let newStr = soure.substr(start, count);
+      return soure.slice(0, start) + '<em>' + newStr + '</em>' + soure.slice(start + count);
+    }
+
+    pageUl.addEventListener('click', function(event) {
+      let target = event.target;
+      if (target.__proto__ === HTMLSpanElement.prototype) {
+        appendResults(parseInt(target.dataset.i));
+      }
+    })
+
+    function appendResults(index) {
+      let htmlResult = '';
+      let start = index || 0;
+      let end = Math.min(start + pageSize, finds.length);
+      for (let i = start; i < end; i++) {
+        const current = finds[i];
+        let html = current.title;
+        let sum = 0;
+        let positions = current.positions;
+        positions.forEach(position => {
+          html = insertStr(html, position.start + sum, position.count);
+          sum += 9;
+        })
+        htmlResult += `<div class="item"><a class="result-title" href="${current.link}">${html}</a></div>`;
+      }
+      result.innerHTML = htmlResult;
+      pageUl.innerHTML = '';
+      let count = finds.length / pageSize;
+      let lis = '';
+      if (start !== 0) {
+        lis += `<span class="fa fa-angle-left" data-i='${start - 1}'></span>`;
+      }
+      for (let i = 0; i < count; i++) {
+        lis += `<span class='${i === start?'current':''}' data-i='${i}'>${i+1}</span>`;     
+      }
+      if (start+1 < count) {
+        lis += `<span class="fa fa-angle-right" data-i='${start+1}'></span>`;  
+      }
+      pageUl.innerHTML = lis;
+    }
+
+    function search(delay) {
+      let timer = null
+      return function () {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+          let start = Date.now();
+          let segments = searchBox.value.split(' ').filter(c => c != '');
+          if (segments.length <= 0) {
+            return;
+          }
+          finds = [];
+          let htmlResult = '';
+          contents.forEach(content => {
+            let title = content.title;
+            let positions = [];
+            let find = false;
+            segments.forEach((segment) => {
+              if (content.title.includes(segment)) {
+                find = true;
+                positions.push({
+                  start: content.title.indexOf(segment),
+                  count: segment.length
+                })
+              } else if (content.details.includes(segment)) {
+                find = true;
+              }
+            });
+            if (find) {
+              finds.push({
+                title: content.title,
+                link: content.link,
+                positions
+              });
+            }
+          })
+          appendResults(0);
+          statCount.textContent = finds.length;
+          statTimes.textContent = Date.now() - start;
+        }, delay)
+      }
+    }
+    searchBox.addEventListener('input', search(200));
+  }()
+</script>
+
+<input hidden id="copy" />
+<script>
+  !function () {
+    let times = document.querySelectorAll('.publish-time');
+    for (let i = 0; i < times.length; i++) {
+      let date = times[i].dataset.t;
+      let time = Math.floor((new Date().getTime() - new Date(date).getTime()) / 1000);
+      if (time < 60) {
+        str = time + '秒之前';
+      } else if (time < 3600) {
+        str = Math.floor(time / 60) + '分钟之前';
+      } else if (time >= 3600 && time < 86400) {
+        str = Math.floor(time / 3600) + '小时之前';
+      } else if (time >= 86400 && time < 259200) {
+        str = Math.floor(time / 86400) + '天之前';
+      } else {
+        str = times[i].textContent;
+      }
+      times[i].textContent = str;
+    }
+  }();
+</script>
+
+<script>
+  let language = '';
+  if (language !== '') {
+    let map = new Map();
+    if (language === 'en') {
+      map.set('search', 'Search');
+      map.set('category', 'Categories');
+      map.set('article', 'Articles');
+      map.set('tag', 'Tags');
+      map.set('top', 'Top');
+      map.set('publish', 'published');
+      map.set('minute', ' minutes');
+      map.set('read-more', 'Read More');
+      map.set('view', 'View');
+      map.set('words', ' words');
+      map.set('category-in', 'category in');
+      map.set('preview', 'Meta');
+      map.set('index', 'Toc');
+      map.set('no-archives', "You haven't created yet");
+      map.set('archives', " articles in total");
+      map.set('cloud-tags', " tags in total");
+      map.set('copyright', "Copyright: ");
+      map.set('author', "Author: ");
+      map.set('link', "Link: ");
+      map.set('leave-message', "Leave a message");
+      map.set('format', "Links Format");
+      map.set('site-name', "Name: ");
+      map.set('site-link', "Link: ");
+      map.set('site-desc', "Desc: ");
+      map.set('stat', " related results, taking ");
+      map.set('stat-time', " ms");
+      map.set('site-img', "Image: ");
+    }
+
+    if (map.size > 0) {
+      let lanElems = document.querySelectorAll('.language');
+      lanElems.forEach(elem => {
+        let lan = elem.dataset.lan, text = map.get(lan);
+        if (elem.__proto__ === HTMLInputElement.prototype) {
+          elem.placeholder = text
+        } else {
+          if (elem.dataset.count) {
+            text = elem.dataset.count + text;
+          }
+          elem.textContent = text;
+        }
+      })
+    }
+  }
+
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+
+</script>
+<script src="/media/js/motion.js"></script>
+
+
+  <script
+    src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 200
+    });
+  </script>
+
+
+
+
+
+
+</html>

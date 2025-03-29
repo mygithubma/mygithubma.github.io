@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://mygithubma.github.io</id>
+    <title>Gridea</title>
+    <updated>2025-03-29T12:53:31.073Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://mygithubma.github.io"/>
+    <link rel="self" href="https://mygithubma.github.io/atom.xml"/>
+    <subtitle>路漫漫其修远兮，吾将上下而求索。</subtitle>
+    <logo>https://mygithubma.github.io/images/avatar.png</logo>
+    <icon>https://mygithubma.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2025, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[Layout]]></title>
+        <id>https://mygithubma.github.io/layout/</id>
+        <link href="https://mygithubma.github.io/layout/">
+        </link>
+        <updated>2025-03-27T13:11:02.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DDR]]></title>
+        <id>https://mygithubma.github.io/ddr/</id>
+        <link href="https://mygithubma.github.io/ddr/">
+        </link>
+        <updated>2025-03-24T13:20:29.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[电力电子技术]]></title>
+        <id>https://mygithubma.github.io/dian-li-dian-zi-ji-zhu/</id>
+        <link href="https://mygithubma.github.io/dian-li-dian-zi-ji-zhu/">
+        </link>
+        <updated>2025-03-23T14:27:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[反激开关电源]]></title>
+        <id>https://mygithubma.github.io/fan-ji-kai-guan-dian-yuan/</id>
+        <link href="https://mygithubma.github.io/fan-ji-kai-guan-dian-yuan/">
+        </link>
+        <updated>2025-03-23T14:13:09.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[开关电源：]]></title>
+        <id>https://mygithubma.github.io/kai-guan-dian-yuan/</id>
+        <link href="https://mygithubma.github.io/kai-guan-dian-yuan/">
+        </link>
+        <updated>2025-03-23T14:03:22.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[快速确定2层到8层板的叠层设计]]></title>
+        <id>https://mygithubma.github.io/kuai-su-que-ding-2-ceng-dao-8-ceng-ban-de-die-ceng-she-ji/</id>
+        <link href="https://mygithubma.github.io/kuai-su-que-ding-2-ceng-dao-8-ceng-ban-de-die-ceng-she-ji/">
+        </link>
+        <updated>2025-03-23T13:57:16.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[电源分割]]></title>
+        <id>https://mygithubma.github.io/dian-yuan-fen-ge/</id>
+        <link href="https://mygithubma.github.io/dian-yuan-fen-ge/">
+        </link>
+        <updated>2025-03-23T13:50:01.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[各行业的PCB设计规范]]></title>
+        <id>https://mygithubma.github.io/ge-xing-ye-de-pcb-she-ji-gui-fan/</id>
+        <link href="https://mygithubma.github.io/ge-xing-ye-de-pcb-she-ji-gui-fan/">
+        </link>
+        <updated>2025-03-23T12:31:06.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[conda命令行]]></title>
+        <id>https://mygithubma.github.io/conda-ming-ling-xing/</id>
+        <link href="https://mygithubma.github.io/conda-ming-ling-xing/">
+        </link>
+        <updated>2025-03-23T12:29:44.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Xteminal命令行]]></title>
+        <id>https://mygithubma.github.io/xteminal-ming-ling-xing/</id>
+        <link href="https://mygithubma.github.io/xteminal-ming-ling-xing/">
+        </link>
+        <updated>2025-03-23T12:27:38.000Z</updated>
+    </entry>
+</feed>
