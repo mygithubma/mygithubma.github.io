@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://mygithubma.github.io</id>
+    <title>Gridea</title>
+    <updated>2025-05-24T04:07:04.520Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://mygithubma.github.io"/>
+    <link rel="self" href="https://mygithubma.github.io/atom.xml"/>
+    <subtitle>路漫漫其修远兮，吾将上下而求索。</subtitle>
+    <logo>https://mygithubma.github.io/images/avatar.png</logo>
+    <icon>https://mygithubma.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2025, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[Opencv-(1)-安装opencv]]></title>
+        <id>https://mygithubma.github.io/opencv-1-an-zhuang-opencv/</id>
+        <link href="https://mygithubma.github.io/opencv-1-an-zhuang-opencv/">
+        </link>
+        <updated>2025-05-17T13:39:46.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Opencv-(1)]]></title>
+        <id>https://mygithubma.github.io/opencv-1/</id>
+        <link href="https://mygithubma.github.io/opencv-1/">
+        </link>
+        <updated>2025-05-17T13:39:46.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[vs code配置gcc]]></title>
+        <id>https://mygithubma.github.io/vs-code-pei-zhi-gcc/</id>
+        <link href="https://mygithubma.github.io/vs-code-pei-zhi-gcc/">
+        </link>
+        <updated>2025-05-17T06:26:45.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[git常用命令查找]]></title>
+        <id>https://mygithubma.github.io/git-chang-yong-ming-ling-cha-zhao/</id>
+        <link href="https://mygithubma.github.io/git-chang-yong-ming-ling-cha-zhao/">
+        </link>
+        <updated>2025-05-16T07:35:10.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[gitee上传代码]]></title>
+        <id>https://mygithubma.github.io/gitee/</id>
+        <link href="https://mygithubma.github.io/gitee/">
+        </link>
+        <updated>2025-05-16T05:02:12.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基于Yolov5+Deepsort+Pyqt的单目标跟踪器设计track.py：]]></title>
+        <id>https://mygithubma.github.io/ji-yu-yolov5deepsortpyqt-de-dan-mu-biao-gen-zong-qi-she-ji-trackpy/</id>
+        <link href="https://mygithubma.github.io/ji-yu-yolov5deepsortpyqt-de-dan-mu-biao-gen-zong-qi-she-ji-trackpy/">
+        </link>
+        <updated>2025-04-04T09:54:45.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基于Yolov5+Deepsort+Pyqt的单目标跟踪器设计train.py：]]></title>
+        <id>https://mygithubma.github.io/ji-yu-yolov5deepsortpyqt-de-dan-mu-biao-gen-zong-qi-she-ji-trainpy/</id>
+        <link href="https://mygithubma.github.io/ji-yu-yolov5deepsortpyqt-de-dan-mu-biao-gen-zong-qi-she-ji-trainpy/">
+        </link>
+        <updated>2025-03-31T13:33:56.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基于Yolov5+Deepsort+Pyqt的单目标跟踪器设计yolo.py：]]></title>
+        <id>https://mygithubma.github.io/ji-yu-yolov5deepsortpyqt-de-dan-mu-biao-gen-zong-qi-she-ji-yolopy/</id>
+        <link href="https://mygithubma.github.io/ji-yu-yolov5deepsortpyqt-de-dan-mu-biao-gen-zong-qi-she-ji-yolopy/">
+        </link>
+        <updated>2025-03-30T09:42:06.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基于Yolov5+Deepsort+Pyqt的单目标跟踪器设计detect.py：]]></title>
+        <id>https://mygithubma.github.io/ji-yu-yolov5deepsortpyqt-de-dan-mu-biao-gen-zong-qi-she-ji/</id>
+        <link href="https://mygithubma.github.io/ji-yu-yolov5deepsortpyqt-de-dan-mu-biao-gen-zong-qi-she-ji/">
+        </link>
+        <updated>2025-03-29T12:59:28.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Layout]]></title>
+        <id>https://mygithubma.github.io/layout/</id>
+        <link href="https://mygithubma.github.io/layout/">
+        </link>
+        <updated>2025-03-27T13:11:02.000Z</updated>
+    </entry>
+</feed>
