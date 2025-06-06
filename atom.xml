@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://mygithubma.github.io</id>
+    <title>Gridea</title>
+    <updated>2025-06-06T07:24:17.522Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://mygithubma.github.io"/>
+    <link rel="self" href="https://mygithubma.github.io/atom.xml"/>
+    <subtitle>路漫漫其修远兮，吾将上下而求索。</subtitle>
+    <logo>https://mygithubma.github.io/images/avatar.png</logo>
+    <icon>https://mygithubma.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2025, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[基于Yolov5+Deepsort+Pyqt的单目标跟踪器设计UI设计：]]></title>
+        <id>https://mygithubma.github.io/ji-yu-yolov5deepsortpyqt-de-dan-mu-biao-gen-zong-qi-she-ji-ui-she-ji/</id>
+        <link href="https://mygithubma.github.io/ji-yu-yolov5deepsortpyqt-de-dan-mu-biao-gen-zong-qi-she-ji-ui-she-ji/">
+        </link>
+        <updated>2025-06-06T06:18:17.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DeepSort-匈牙利算法]]></title>
+        <id>https://mygithubma.github.io/deepsort-xiong-ya-li-suan-fa/</id>
+        <link href="https://mygithubma.github.io/deepsort-xiong-ya-li-suan-fa/">
+        </link>
+        <updated>2025-06-06T05:53:34.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DeepSort-卡尔曼滤波]]></title>
+        <id>https://mygithubma.github.io/deepsort-qia-er-man-lu-bo/</id>
+        <link href="https://mygithubma.github.io/deepsort-qia-er-man-lu-bo/">
+        </link>
+        <updated>2025-06-05T07:01:32.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Opencv-读取图片]]></title>
+        <id>https://mygithubma.github.io/opencv-du-qu-tu-pian/</id>
+        <link href="https://mygithubma.github.io/opencv-du-qu-tu-pian/">
+        </link>
+        <updated>2025-06-01T09:42:14.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Opencv-(1)-安装opencv]]></title>
+        <id>https://mygithubma.github.io/opencv-1-an-zhuang-opencv/</id>
+        <link href="https://mygithubma.github.io/opencv-1-an-zhuang-opencv/">
+        </link>
+        <updated>2025-05-17T13:39:46.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[vs code配置gcc]]></title>
+        <id>https://mygithubma.github.io/vs-code-pei-zhi-gcc/</id>
+        <link href="https://mygithubma.github.io/vs-code-pei-zhi-gcc/">
+        </link>
+        <updated>2025-05-17T06:26:45.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[gitee上传代码]]></title>
+        <id>https://mygithubma.github.io/gitee/</id>
+        <link href="https://mygithubma.github.io/gitee/">
+        </link>
+        <updated>2025-05-16T05:02:12.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基于Yolov5+Deepsort+Pyqt的单目标跟踪器设计track.py：]]></title>
+        <id>https://mygithubma.github.io/ji-yu-yolov5deepsortpyqt-de-dan-mu-biao-gen-zong-qi-she-ji-trackpy/</id>
+        <link href="https://mygithubma.github.io/ji-yu-yolov5deepsortpyqt-de-dan-mu-biao-gen-zong-qi-she-ji-trackpy/">
+        </link>
+        <updated>2025-04-04T09:54:45.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基于Yolov5+Deepsort+Pyqt的单目标跟踪器设计train.py：]]></title>
+        <id>https://mygithubma.github.io/ji-yu-yolov5deepsortpyqt-de-dan-mu-biao-gen-zong-qi-she-ji-trainpy/</id>
+        <link href="https://mygithubma.github.io/ji-yu-yolov5deepsortpyqt-de-dan-mu-biao-gen-zong-qi-she-ji-trainpy/">
+        </link>
+        <updated>2025-03-31T13:33:56.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基于Yolov5+Deepsort+Pyqt的单目标跟踪器设计yolo.py：]]></title>
+        <id>https://mygithubma.github.io/ji-yu-yolov5deepsortpyqt-de-dan-mu-biao-gen-zong-qi-she-ji-yolopy/</id>
+        <link href="https://mygithubma.github.io/ji-yu-yolov5deepsortpyqt-de-dan-mu-biao-gen-zong-qi-she-ji-yolopy/">
+        </link>
+        <updated>2025-03-30T09:42:06.000Z</updated>
+    </entry>
+</feed>
