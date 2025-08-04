@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://mygithubma.github.io</id>
+    <title>Gridea</title>
+    <updated>2025-08-04T12:12:00.635Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://mygithubma.github.io"/>
+    <link rel="self" href="https://mygithubma.github.io/atom.xml"/>
+    <subtitle>路漫漫其修远兮，吾将上下而求索。</subtitle>
+    <logo>https://mygithubma.github.io/images/avatar.png</logo>
+    <icon>https://mygithubma.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2025, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[PCIE带宽、速率]]></title>
+        <id>https://mygithubma.github.io/pcie-dai-kuan-su-lu/</id>
+        <link href="https://mygithubma.github.io/pcie-dai-kuan-su-lu/">
+        </link>
+        <updated>2025-08-04T11:37:22.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Git上传报错fatal: unable to access ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''https://github.com/mygithubma/gridea_images.git/'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''': Failed to connect to github.com port 443 after 21093 ms: Could not connect to server]]></title>
+        <id>https://mygithubma.github.io/git-shang-chuan-bao-cuo-fatal-unable-to-access-httpsgithubcommygithubmagridea_imagesgit-failed-to-connect-to-githubcom-port-443-after-21093-ms-could-not-connect-to-server/</id>
+        <link href="https://mygithubma.github.io/git-shang-chuan-bao-cuo-fatal-unable-to-access-httpsgithubcommygithubmagridea_imagesgit-failed-to-connect-to-githubcom-port-443-after-21093-ms-could-not-connect-to-server/">
+        </link>
+        <updated>2025-07-29T13:16:50.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[单片机-串口]]></title>
+        <id>https://mygithubma.github.io/dan-pian-ji-chuan-kou/</id>
+        <link href="https://mygithubma.github.io/dan-pian-ji-chuan-kou/">
+        </link>
+        <updated>2025-07-28T05:37:23.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[单片机-Led]]></title>
+        <id>https://mygithubma.github.io/dan-pian-ji-led/</id>
+        <link href="https://mygithubma.github.io/dan-pian-ji-led/">
+        </link>
+        <updated>2025-07-27T12:13:49.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[单片机-数码管；]]></title>
+        <id>https://mygithubma.github.io/dan-pian-ji-ru-men-1/</id>
+        <link href="https://mygithubma.github.io/dan-pian-ji-ru-men-1/">
+        </link>
+        <updated>2025-07-27T10:13:25.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[单片机-中断]]></title>
+        <id>https://mygithubma.github.io/dan-pian-ji-zhong-duan/</id>
+        <link href="https://mygithubma.github.io/dan-pian-ji-zhong-duan/">
+        </link>
+        <updated>2025-07-27T02:13:52.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[单片机-基础知识（STC89C52）]]></title>
+        <id>https://mygithubma.github.io/dan-pian-ji-ji-chu-zhi-shi-stc89c52/</id>
+        <link href="https://mygithubma.github.io/dan-pian-ji-ji-chu-zhi-shi-stc89c52/">
+        </link>
+        <updated>2025-07-26T04:24:29.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[单片机-DS18B20]]></title>
+        <id>https://mygithubma.github.io/dan-pian-ji-ds18b20/</id>
+        <link href="https://mygithubma.github.io/dan-pian-ji-ds18b20/">
+        </link>
+        <updated>2025-07-20T13:25:25.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[单片机-IIC]]></title>
+        <id>https://mygithubma.github.io/dan-pian-ji-iic/</id>
+        <link href="https://mygithubma.github.io/dan-pian-ji-iic/">
+        </link>
+        <updated>2025-07-19T07:40:50.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[单片机-ADDA]]></title>
+        <id>https://mygithubma.github.io/dan-pian-ji-adda/</id>
+        <link href="https://mygithubma.github.io/dan-pian-ji-adda/">
+        </link>
+        <updated>2025-07-19T02:48:47.000Z</updated>
+    </entry>
+</feed>
