@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://mygithubma.github.io</id>
+    <title>Gridea</title>
+    <updated>2025-08-25T13:05:32.510Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://mygithubma.github.io"/>
+    <link rel="self" href="https://mygithubma.github.io/atom.xml"/>
+    <subtitle>路漫漫其修远兮，吾将上下而求索。</subtitle>
+    <logo>https://mygithubma.github.io/images/avatar.png</logo>
+    <icon>https://mygithubma.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2025, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[Cadence-PCB封装导STEP模型]]></title>
+        <id>https://mygithubma.github.io/cadence-pcb-feng-zhuang-dao-step-mo-xing/</id>
+        <link href="https://mygithubma.github.io/cadence-pcb-feng-zhuang-dao-step-mo-xing/">
+        </link>
+        <updated>2025-08-25T12:31:03.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cadence-导入自定义图片丝印logo]]></title>
+        <id>https://mygithubma.github.io/cadence-dao-ru-zi-ding-yi-tu-pian-si-yin-logo/</id>
+        <link href="https://mygithubma.github.io/cadence-dao-ru-zi-ding-yi-tu-pian-si-yin-logo/">
+        </link>
+        <updated>2025-08-24T13:01:11.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cadence-导出Gerber]]></title>
+        <id>https://mygithubma.github.io/cadence-dao-chu-gerber/</id>
+        <link href="https://mygithubma.github.io/cadence-dao-chu-gerber/">
+        </link>
+        <updated>2025-08-24T07:20:50.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cadence-PCB导入网表]]></title>
+        <id>https://mygithubma.github.io/cadence-pcb-dao-ru-wang-biao/</id>
+        <link href="https://mygithubma.github.io/cadence-pcb-dao-ru-wang-biao/">
+        </link>
+        <updated>2025-08-18T14:35:47.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cadence-PCB导入DXF]]></title>
+        <id>https://mygithubma.github.io/cadence-pcb-dao-ru-dxf/</id>
+        <link href="https://mygithubma.github.io/cadence-pcb-dao-ru-dxf/">
+        </link>
+        <updated>2025-08-18T14:13:30.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cadence-PCB导出DXF]]></title>
+        <id>https://mygithubma.github.io/cadence-pcb-dao-chu-dxf/</id>
+        <link href="https://mygithubma.github.io/cadence-pcb-dao-chu-dxf/">
+        </link>
+        <updated>2025-08-18T13:55:01.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cadence-原理图DRC报错同一个封装下存在多个相同名称的GND、VCC管脚导致]]></title>
+        <id>https://mygithubma.github.io/cadence-yuan-li-tu-drc-bao-cuo-tong-yi-ge-feng-zhuang-xia-cun-zai-duo-ge-xiang-tong-ming-cheng-de-gndvcc-guan-jiao-dao-zhi/</id>
+        <link href="https://mygithubma.github.io/cadence-yuan-li-tu-drc-bao-cuo-tong-yi-ge-feng-zhuang-xia-cun-zai-duo-ge-xiang-tong-ming-cheng-de-gndvcc-guan-jiao-dao-zhi/">
+        </link>
+        <updated>2025-08-18T13:48:46.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cadence-导出网表Netlist报错找不到footprint]]></title>
+        <id>https://mygithubma.github.io/cadence-dao-chu-wang-biao-netlist-bao-cuo-zhao-bu-dao-footprint/</id>
+        <link href="https://mygithubma.github.io/cadence-dao-chu-wang-biao-netlist-bao-cuo-zhao-bu-dao-footprint/">
+        </link>
+        <updated>2025-08-18T13:42:31.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[3D模型]]></title>
+        <id>https://mygithubma.github.io/3d-mo-xing/</id>
+        <link href="https://mygithubma.github.io/3d-mo-xing/">
+        </link>
+        <updated>2025-08-16T15:30:19.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ESD]]></title>
+        <id>https://mygithubma.github.io/esd/</id>
+        <link href="https://mygithubma.github.io/esd/">
+        </link>
+        <updated>2025-08-09T02:14:10.000Z</updated>
+    </entry>
+</feed>
