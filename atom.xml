@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://mygithubma.github.io</id>
+    <title>Gridea</title>
+    <updated>2025-10-20T15:28:52.501Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://mygithubma.github.io"/>
+    <link rel="self" href="https://mygithubma.github.io/atom.xml"/>
+    <subtitle>路漫漫其修远兮，吾将上下而求索。</subtitle>
+    <logo>https://mygithubma.github.io/images/avatar.png</logo>
+    <icon>https://mygithubma.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2025, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[Github-拉取文件]]></title>
+        <id>https://mygithubma.github.io/github-la-qu-wen-jian/</id>
+        <link href="https://mygithubma.github.io/github-la-qu-wen-jian/">
+        </link>
+        <updated>2025-10-20T15:22:06.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Github-上传项目]]></title>
+        <id>https://mygithubma.github.io/github-shang-chuan-xiang-mu/</id>
+        <link href="https://mygithubma.github.io/github-shang-chuan-xiang-mu/">
+        </link>
+        <updated>2025-10-20T13:08:43.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cadence-无盘孔设计]]></title>
+        <id>https://mygithubma.github.io/cadence-wu-pan-kong-she-ji/</id>
+        <link href="https://mygithubma.github.io/cadence-wu-pan-kong-she-ji/">
+        </link>
+        <updated>2025-10-14T13:28:28.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cadence-光绘设置保存，下次直接调用]]></title>
+        <id>https://mygithubma.github.io/cadence-guang-hui-she-zhi-bao-cun-xia-ci-zhi-jie-diao-yong/</id>
+        <link href="https://mygithubma.github.io/cadence-guang-hui-she-zhi-bao-cun-xia-ci-zhi-jie-diao-yong/">
+        </link>
+        <updated>2025-10-14T13:15:07.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cadence-开槽]]></title>
+        <id>https://mygithubma.github.io/cadence-kai-cao/</id>
+        <link href="https://mygithubma.github.io/cadence-kai-cao/">
+        </link>
+        <updated>2025-10-13T13:56:23.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cadence-恢复删除的位号]]></title>
+        <id>https://mygithubma.github.io/cadence-hui-fu-shan-chu-de-wei-hao/</id>
+        <link href="https://mygithubma.github.io/cadence-hui-fu-shan-chu-de-wei-hao/">
+        </link>
+        <updated>2025-10-13T13:38:03.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cadence-6层FPGA核心板系统性出Gerber、生产文件、BOM]]></title>
+        <id>https://mygithubma.github.io/cadence-6-ceng-fpga-he-xin-ban-chu-gerber/</id>
+        <link href="https://mygithubma.github.io/cadence-6-ceng-fpga-he-xin-ban-chu-gerber/">
+        </link>
+        <updated>2025-10-13T13:15:41.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cadence-晶振包地、挖空铜皮]]></title>
+        <id>https://mygithubma.github.io/cadence-jing-zhen-bao-di-wa-kong-tong-pi/</id>
+        <link href="https://mygithubma.github.io/cadence-jing-zhen-bao-di-wa-kong-tong-pi/">
+        </link>
+        <updated>2025-10-13T13:14:24.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cadence-BGA封装正面不建议铺铜]]></title>
+        <id>https://mygithubma.github.io/cadence-bga-feng-zhuang-zheng-mian-bu-jian-yi-pu-tong/</id>
+        <link href="https://mygithubma.github.io/cadence-bga-feng-zhuang-zheng-mian-bu-jian-yi-pu-tong/">
+        </link>
+        <updated>2025-10-13T11:35:08.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cadence-unassigned shapes]]></title>
+        <id>https://mygithubma.github.io/cadence-unassigned-shapes/</id>
+        <link href="https://mygithubma.github.io/cadence-unassigned-shapes/">
+        </link>
+        <updated>2025-10-12T14:31:50.000Z</updated>
+    </entry>
+</feed>
