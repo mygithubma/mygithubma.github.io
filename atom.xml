@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://mygithubma.github.io</id>
+    <title>Gridea</title>
+    <updated>2025-11-01T15:32:50.704Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://mygithubma.github.io"/>
+    <link rel="self" href="https://mygithubma.github.io/atom.xml"/>
+    <subtitle>路漫漫其修远兮，吾将上下而求索。</subtitle>
+    <logo>https://mygithubma.github.io/images/avatar.png</logo>
+    <icon>https://mygithubma.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2025, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[Cadence-快捷键定义设置]]></title>
+        <id>https://mygithubma.github.io/cadence-kuai-jie-jian-ding-yi-she-zhi/</id>
+        <link href="https://mygithubma.github.io/cadence-kuai-jie-jian-ding-yi-she-zhi/">
+        </link>
+        <updated>2025-11-01T09:52:12.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cadence-规则管理器关闭网络交互]]></title>
+        <id>https://mygithubma.github.io/cadence-gui-ze-guan-li-qi-guan-bi-wang-luo-jiao-hu/</id>
+        <link href="https://mygithubma.github.io/cadence-gui-ze-guan-li-qi-guan-bi-wang-luo-jiao-hu/">
+        </link>
+        <updated>2025-10-31T17:24:38.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DDR]]></title>
+        <id>https://mygithubma.github.io/ddr/</id>
+        <link href="https://mygithubma.github.io/ddr/">
+        </link>
+        <updated>2025-10-26T06:26:44.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DDR-SODIMM]]></title>
+        <id>https://mygithubma.github.io/ddr-sodimm/</id>
+        <link href="https://mygithubma.github.io/ddr-sodimm/">
+        </link>
+        <updated>2025-10-26T06:21:51.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cadence-叠层知识]]></title>
+        <id>https://mygithubma.github.io/cadence-die-ceng-zhi-shi/</id>
+        <link href="https://mygithubma.github.io/cadence-die-ceng-zhi-shi/">
+        </link>
+        <updated>2025-10-24T14:05:08.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cadence-ORCAD添加离页连接符没有作用]]></title>
+        <id>https://mygithubma.github.io/cadence-orcad-tian-jia-chi-ye-lian-jie-fu-mei-you-zuo-yong/</id>
+        <link href="https://mygithubma.github.io/cadence-orcad-tian-jia-chi-ye-lian-jie-fu-mei-you-zuo-yong/">
+        </link>
+        <updated>2025-10-22T13:00:11.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Github-拉取文件]]></title>
+        <id>https://mygithubma.github.io/github-la-qu-wen-jian/</id>
+        <link href="https://mygithubma.github.io/github-la-qu-wen-jian/">
+        </link>
+        <updated>2025-10-20T15:22:06.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Github-上传项目]]></title>
+        <id>https://mygithubma.github.io/github-shang-chuan-xiang-mu/</id>
+        <link href="https://mygithubma.github.io/github-shang-chuan-xiang-mu/">
+        </link>
+        <updated>2025-10-20T13:08:43.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cadence-无盘孔设计]]></title>
+        <id>https://mygithubma.github.io/cadence-wu-pan-kong-she-ji/</id>
+        <link href="https://mygithubma.github.io/cadence-wu-pan-kong-she-ji/">
+        </link>
+        <updated>2025-10-14T13:28:28.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cadence-光绘设置保存，下次直接调用]]></title>
+        <id>https://mygithubma.github.io/cadence-guang-hui-she-zhi-bao-cun-xia-ci-zhi-jie-diao-yong/</id>
+        <link href="https://mygithubma.github.io/cadence-guang-hui-she-zhi-bao-cun-xia-ci-zhi-jie-diao-yong/">
+        </link>
+        <updated>2025-10-14T13:15:07.000Z</updated>
+    </entry>
+</feed>
