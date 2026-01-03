@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://mygithubma.github.io</id>
+    <title>仙道枫的博客</title>
+    <updated>2026-01-03T14:36:42.498Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://mygithubma.github.io"/>
+    <link rel="self" href="https://mygithubma.github.io/atom.xml"/>
+    <subtitle>路漫漫其修远兮，吾将上下而求索。</subtitle>
+    <logo>https://mygithubma.github.io/images/avatar.png</logo>
+    <icon>https://mygithubma.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2026, 仙道枫的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[Sigrity使用教程-SpeedEM Generator时域仿真眼图]]></title>
+        <id>https://mygithubma.github.io/QH10XRgYfc/</id>
+        <link href="https://mygithubma.github.io/QH10XRgYfc/">
+        </link>
+        <updated>2026-01-03T14:21:55.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sigrity仿真差分线]]></title>
+        <id>https://mygithubma.github.io/xN8GnhuiM-/</id>
+        <link href="https://mygithubma.github.io/xN8GnhuiM-/">
+        </link>
+        <updated>2026-01-02T13:28:01.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[高速设计与板材]]></title>
+        <id>https://mygithubma.github.io/r6kzcH8fvw/</id>
+        <link href="https://mygithubma.github.io/r6kzcH8fvw/">
+        </link>
+        <updated>2026-01-02T06:24:10.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[电源设计]]></title>
+        <id>https://mygithubma.github.io/IIPU8LCj20/</id>
+        <link href="https://mygithubma.github.io/IIPU8LCj20/">
+        </link>
+        <updated>2026-01-01T13:08:43.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[高速串行总线设计与仿真]]></title>
+        <id>https://mygithubma.github.io/gao-su-chuan-xing-zong-xian-she-ji-yu-fang-zhen/</id>
+        <link href="https://mygithubma.github.io/gao-su-chuan-xing-zong-xian-she-ji-yu-fang-zhen/">
+        </link>
+        <updated>2026-01-01T04:50:25.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DDRx设计与仿真]]></title>
+        <id>https://mygithubma.github.io/ddrx-she-ji-yu-fang-zhen/</id>
+        <link href="https://mygithubma.github.io/ddrx-she-ji-yu-fang-zhen/">
+        </link>
+        <updated>2025-12-30T12:09:27.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[硬件-等长与等时（50欧姆微带线仿真）]]></title>
+        <id>https://mygithubma.github.io/ying-jian-deng-chang-yu-deng-shi-50-ou-mu-wei-dai-xian-fang-zhen/</id>
+        <link href="https://mygithubma.github.io/ying-jian-deng-chang-yu-deng-shi-50-ou-mu-wei-dai-xian-fang-zhen/">
+        </link>
+        <updated>2025-12-29T15:36:08.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Autocad快捷键]]></title>
+        <id>https://mygithubma.github.io/autocad-kuai-jie-jian/</id>
+        <link href="https://mygithubma.github.io/autocad-kuai-jie-jian/">
+        </link>
+        <updated>2025-12-28T14:52:27.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[BIOS详解]]></title>
+        <id>https://mygithubma.github.io/bios-xiang-jie/</id>
+        <link href="https://mygithubma.github.io/bios-xiang-jie/">
+        </link>
+        <updated>2025-12-28T02:44:30.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DDR3]]></title>
+        <id>https://mygithubma.github.io/ddr3/</id>
+        <link href="https://mygithubma.github.io/ddr3/">
+        </link>
+        <updated>2025-12-27T02:52:24.000Z</updated>
+    </entry>
+</feed>
