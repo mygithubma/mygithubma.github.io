@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://mygithubma.github.io</id>
+    <title>仙道枫的博客</title>
+    <updated>2026-02-15T04:40:56.194Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://mygithubma.github.io"/>
+    <link rel="self" href="https://mygithubma.github.io/atom.xml"/>
+    <subtitle>路漫漫其修远兮，吾将上下而求索。</subtitle>
+    <logo>https://mygithubma.github.io/images/avatar.png</logo>
+    <icon>https://mygithubma.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2026, 仙道枫的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[Sigrity Aurura - 点击Set up Default Models无反应，环境变量配置无误]]></title>
+        <id>https://mygithubma.github.io/ZG0ta_c8yu/</id>
+        <link href="https://mygithubma.github.io/ZG0ta_c8yu/">
+        </link>
+        <updated>2026-02-11T18:44:11.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sigrity Topology Workbench+Aurora 仿真DDR Tx-Rx眼图]]></title>
+        <id>https://mygithubma.github.io/oKhImbt8mm/</id>
+        <link href="https://mygithubma.github.io/oKhImbt8mm/">
+        </link>
+        <updated>2026-02-11T12:16:38.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sigrity Topology Workbench-flyby拓扑结构导入allegro]]></title>
+        <id>https://mygithubma.github.io/h9osNET9uq/</id>
+        <link href="https://mygithubma.github.io/h9osNET9uq/">
+        </link>
+        <updated>2026-02-08T10:57:12.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Allegro导入网表报错找不到flash symbol]]></title>
+        <id>https://mygithubma.github.io/l6HcrEpte8/</id>
+        <link href="https://mygithubma.github.io/l6HcrEpte8/">
+        </link>
+        <updated>2026-01-24T06:47:16.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sigrity Aurora仿真-PowerTree文件]]></title>
+        <id>https://mygithubma.github.io/QhrOCKa_JP/</id>
+        <link href="https://mygithubma.github.io/QhrOCKa_JP/">
+        </link>
+        <updated>2026-01-18T10:50:12.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sigrity Aurora仿真-IR Drop]]></title>
+        <id>https://mygithubma.github.io/cUfMOwWpWJ/</id>
+        <link href="https://mygithubma.github.io/cUfMOwWpWJ/">
+        </link>
+        <updated>2026-01-18T10:31:26.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[IBIS模型添加到Orcad]]></title>
+        <id>https://mygithubma.github.io/GFPRYnuXgp/</id>
+        <link href="https://mygithubma.github.io/GFPRYnuXgp/">
+        </link>
+        <updated>2026-01-17T13:11:06.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sigrity Aurora仿真-Crosstalk串扰]]></title>
+        <id>https://mygithubma.github.io/yZD8TfUVmG/</id>
+        <link href="https://mygithubma.github.io/yZD8TfUVmG/">
+        </link>
+        <updated>2026-01-17T11:48:53.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sigrity Aurora仿真-Reflection反射]]></title>
+        <id>https://mygithubma.github.io/44QbwZNUYh/</id>
+        <link href="https://mygithubma.github.io/44QbwZNUYh/">
+        </link>
+        <updated>2026-01-17T09:41:44.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sigrity Aurora仿真-耦合分析 Coupling]]></title>
+        <id>https://mygithubma.github.io/lTBB6N6-JR/</id>
+        <link href="https://mygithubma.github.io/lTBB6N6-JR/">
+        </link>
+        <updated>2026-01-17T07:32:37.000Z</updated>
+    </entry>
+</feed>
