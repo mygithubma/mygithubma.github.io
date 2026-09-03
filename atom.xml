@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://mygithubma.github.io</id>
+    <title>仙道枫的博客</title>
+    <updated>2026-09-03T14:47:13.304Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://mygithubma.github.io"/>
+    <link rel="self" href="https://mygithubma.github.io/atom.xml"/>
+    <subtitle>路漫漫其修远兮，吾将上下而求索。</subtitle>
+    <logo>https://mygithubma.github.io/images/avatar.png</logo>
+    <icon>https://mygithubma.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2026, 仙道枫的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[Allegro SI拓扑提取]]></title>
+        <id>https://mygithubma.github.io/Y4qLFL1Qrl/</id>
+        <link href="https://mygithubma.github.io/Y4qLFL1Qrl/">
+        </link>
+        <updated>2026-09-03T11:51:20.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sigrity提取S参数]]></title>
+        <id>https://mygithubma.github.io/7bDq9XMI9a/</id>
+        <link href="https://mygithubma.github.io/7bDq9XMI9a/">
+        </link>
+        <updated>2026-09-02T14:13:50.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Allegro-Skill学习（4）- 位号调整 RefAdj]]></title>
+        <id>https://mygithubma.github.io/WvafE7oNte/</id>
+        <link href="https://mygithubma.github.io/WvafE7oNte/">
+        </link>
+        <updated>2026-08-03T12:04:32.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Allegro-Skill学习（3）- Skill debuger]]></title>
+        <id>https://mygithubma.github.io/BYNh9NdawI/</id>
+        <link href="https://mygithubma.github.io/BYNh9NdawI/">
+        </link>
+        <updated>2026-08-03T12:00:20.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Allegro-Skill学习（2）- ClineCut]]></title>
+        <id>https://mygithubma.github.io/oooybEMN7G/</id>
+        <link href="https://mygithubma.github.io/oooybEMN7G/">
+        </link>
+        <updated>2026-08-03T11:49:31.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Allegro-Skill学习（1）-单位换算Unitconv]]></title>
+        <id>https://mygithubma.github.io/4aT_2P2_cR/</id>
+        <link href="https://mygithubma.github.io/4aT_2P2_cR/">
+        </link>
+        <updated>2026-06-28T11:11:23.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cadence-在Allegro里面添加Skill]]></title>
+        <id>https://mygithubma.github.io/KW-k_Z01CJ/</id>
+        <link href="https://mygithubma.github.io/KW-k_Z01CJ/">
+        </link>
+        <updated>2026-06-18T16:57:54.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CAM350-Compare Layers]]></title>
+        <id>https://mygithubma.github.io/f3gA8P2UMJ/</id>
+        <link href="https://mygithubma.github.io/f3gA8P2UMJ/">
+        </link>
+        <updated>2026-06-01T01:37:30.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CAM350-DFM Stream]]></title>
+        <id>https://mygithubma.github.io/95lhNY5fTs/</id>
+        <link href="https://mygithubma.github.io/95lhNY5fTs/">
+        </link>
+        <updated>2026-05-31T07:02:02.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CAM350-快捷键]]></title>
+        <id>https://mygithubma.github.io/dru6rcZWdM/</id>
+        <link href="https://mygithubma.github.io/dru6rcZWdM/">
+        </link>
+        <updated>2026-05-31T04:00:47.000Z</updated>
+    </entry>
+</feed>
